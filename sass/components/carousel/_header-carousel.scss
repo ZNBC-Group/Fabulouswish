@@ -1,0 +1,36 @@
+// Header Carousel
+.swiper-container.header-carousel {
+    width: 100%;
+    height: 42.66666666666667vw;
+    position: relative;
+    margin: 0 0 5px 0;
+
+    .swiper-slide {
+        position: relative;
+        /* Center slide text vertically */
+        @include flex-column;
+        width: 100%;
+        height: 100%;
+        transition: $transition-slow;
+
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &.swiper-slide-active {
+            // transition: $transition-slow;
+            // height: 100%;
+            // transform: translateY(0);
+        }
+    }
+
+    .swiper-pagination {
+        .swiper-pagination-bullet {
+            width: 6px;
+            height: 6px;
+        }
+    }
+}

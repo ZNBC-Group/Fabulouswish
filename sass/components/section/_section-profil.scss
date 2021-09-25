@@ -1,0 +1,48 @@
+.section-profil {
+    @include flex-row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: $warna2;
+
+    .avatar {
+        width: 18%;
+        // margin: 0 10px 0 0;
+    }
+
+    .field-teks {
+        @include flex-column;
+        align-items: flex-start;
+        justify-content: space-between;
+        height: 68px;
+
+        .teks {
+            color: white;
+            font-size: 14px;
+
+            &.kecil {
+                font-size: 12px;
+                font-weight: 300;
+            }
+
+        }
+    }
+
+    .logout {
+        @include flex-column;
+        align-items: center;
+        justify-content: space-between;
+        width: 26%;
+        text-decoration: none;
+
+        .icon {
+            width: 35%;
+        }
+
+        .teks {
+            color: white;
+            font-size: 12px;
+            font-weight: 300;
+        }
+    }
+}

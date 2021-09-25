@@ -1,0 +1,42 @@
+@mixin tablet {
+    @media screen and (min-width:#{$tablet}) {
+        @content;
+    }
+}
+
+@mixin pc {
+    @media screen and (min-width:#{$pc}) {
+        @content;
+    }
+}
+
+@mixin pcbig {
+    @media screen and (min-width:#{$pcbig}) {
+        @content;
+    }
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin font1 {
+    font-family: 'Roboto Mono', monospace;
+}
+
+@mixin font2 {
+    font-family: 'Roboto Mono', monospace;
+}
+
+@mixin fullposition {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}

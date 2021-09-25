@@ -1,0 +1,82 @@
+// Header Carousel
+.swiper-container.pedagang-carousel {
+    // width: 100%;
+    height: 340px;
+    position: relative;
+    margin: 0 0 57px 0;
+    transition: $transition-fast;
+
+    &.hilang {
+        opacity: 0;
+    }
+
+    &.hapus {
+        display: none;
+    }
+
+    .swiper-slide {
+        position: relative;
+        /* Center slide text vertically */
+        @include flex-row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        // height: 100%;
+        transition: $transition-slow;
+        background-color: $warna2;
+        padding: 10px;
+
+        // margin: 0 0 5px 0;
+        .field-kiri {
+            @include flex-row;
+            align-items: center;
+
+            .icon {
+                width: 17%;
+                margin: 0 7px 0 0;
+                background-color: white;
+                border-radius: 50%;
+                padding: 2px;
+            }
+
+            .field-teks {
+                @include flex-column;
+                align-items: flex-start;
+                justify-content: space-between;
+                height: 80%;
+
+                p {
+                    color: white;
+                }
+
+                .judul {
+                    font-size: 12px;
+                }
+
+                .teks {
+                    font-size: 12px;
+                    font-weight: 300;
+                }
+            }
+        }
+
+        .field-kanan {
+            @include flex-row;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 25px;
+            padding: 5px 8px;
+            width: 20%;
+
+            .icon {
+                width: 30%;
+            }
+
+            .teks {
+                font-size: 14px;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,40 @@
+.menu {
+    @include flex-row;
+    align-items: center;
+    background-color: $warna2;
+    padding: 0px 20px;
+
+    &.scroll {
+        overflow: auto;
+        white-space: nowrap;
+    }
+
+    .item {
+        @include flex-column;
+        align-items: center;
+        position: relative;
+        padding: 10px;
+        text-decoration: none;
+
+        .teks {
+            color: white;
+            font-size: 12px;
+
+            &.active {
+                color: rgb(64, 135, 241);
+            }
+        }
+
+        .line {
+            position: absolute;
+            bottom: 0;
+            height: 2px;
+            width: 60px;
+            background-color: $warna2;
+
+            &.active {
+                background-color: rgb(64, 135, 241);
+            }
+        }
+    }
+}

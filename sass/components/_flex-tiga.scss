@@ -1,0 +1,32 @@
+.flex-tiga {
+    @include flex-row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    .item {
+        @include flex-column;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: $warna2;
+        width: 33.1%;
+        margin: 0 0 1px 0;
+        padding: 10px 20px;
+        text-align: center;
+
+        .teks {
+            font-size: 12px;
+            font-weight: 300;
+            color: white;
+            margin-bottom: 5px;
+
+            &.biru {
+                font-size: 15px;
+                font-weight: normal;
+                color: rgb(64, 135, 241);
+                margin-bottom: 0px;
+            }
+        }
+    }
+}

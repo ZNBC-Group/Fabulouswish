@@ -1,0 +1,22 @@
+.topbar {
+    @include flex-row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: $warna1;
+    height: 44.1667px;
+
+    .teks {
+        color: white;
+        font-size: 12px;
+        font-weight: 200;
+        width: 30%;
+
+        &.kanan {
+            text-align: right;
+        }
+    }
+
+    .logo {
+        width: 20%;
+    }
+}

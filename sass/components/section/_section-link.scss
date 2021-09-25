@@ -1,0 +1,28 @@
+.section-link {
+    @include flex-row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 5px;
+
+    .link {
+        @include flex-row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $warna2;
+        width: 32.5%;
+        height: 59.7px;
+        padding: 0 7px;
+        border-radius: 5px;
+        text-decoration: none;
+
+        .teks {
+            color: white;
+            font-size: 12px;
+            font-weight: 300;
+        }
+
+        .icon {
+            width: 25%;
+        }
+    }
+}

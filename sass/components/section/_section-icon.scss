@@ -1,0 +1,26 @@
+.section-icon {
+    @include flex-row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $warna2;
+    padding: 10px 0px;
+    margin: 0 0 10px 0;
+
+    .item {
+        @include flex-column;
+        align-items: center;
+        text-decoration: none;
+        width: 33%;
+
+        .icon {
+            width: 9vw;
+        }
+
+        .teks {
+            color: white;
+            font-size: 12px;
+            font-weight: 300;
+            word-spacing: -4px;
+        }
+    }
+}

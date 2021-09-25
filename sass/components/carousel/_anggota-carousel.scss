@@ -1,0 +1,61 @@
+// Header Carousel
+.swiper-container.anggota-carousel {
+    // width: 100%;
+    height: 340px;
+    position: relative;
+    margin: 0 0 57px 0;
+    transition: $transition-fast;
+
+    &.hilang {
+        opacity: 0;
+    }
+
+    &.hapus {
+        display: none;
+    }
+
+    .swiper-slide {
+        position: relative;
+        /* Center slide text vertically */
+        @include flex-row;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        // height: 100%;
+        transition: $transition-slow;
+        background-color: $warna2;
+        padding: 10px;
+        // margin: 0 0 5px 0;
+
+        .icon {
+            width: 12%;
+            margin: 0 7px 0 0;
+            background-color: white;
+            border-radius: 50%;
+            padding: 2px;
+        }
+
+        .field-teks {
+            @include flex-column;
+            align-items: flex-start;
+            justify-content: space-between;
+            height: 80%;
+
+            p {
+                color: white;
+            }
+
+            .judul {
+                font-size: 12px;
+            }
+
+            .teks {
+                font-size: 12px;
+                font-weight: 300;
+            }
+        }
+
+
+    }
+
+}

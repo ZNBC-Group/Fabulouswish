@@ -1,0 +1,33 @@
+.section-judul {
+    background-color: $warna2;
+    color: white;
+    font-size: 12px;
+    font-weight: 300;
+    padding: 10px 20px;
+    margin: 0 0 5px 0;
+
+    &.di-tugas {
+        @include flex-row;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        background-color: $warna1;
+        padding: 10px 0;
+        margin: 0;
+
+        .teks {
+            font-size: 14px;
+            font-weight: normal;
+        }
+
+        .icon {
+            position: absolute;
+            left: 20px;
+
+            i {
+                color: white;
+                font-size: 19px;
+            }
+        }
+    }
+}
