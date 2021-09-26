@@ -1,0 +1,186 @@
+.tab-tugas {
+    @include flex-column;
+    align-items: center;
+    transition: $transition-fast;
+
+    &.hilang {
+        opacity: 0;
+    }
+
+    &.hapus {
+        display: none
+    }
+
+    .flex-data {
+        @include flex-column;
+        align-items: center;
+        padding: 3px 0 0 0;
+        transition: $transition-fast;
+
+        &.row {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 15px 10px 0 10px;
+        }
+
+        &.hilang {
+            opacity: 0;
+        }
+
+        &.hapus {
+            display: none
+        }
+
+        .item {
+            @include flex-row;
+            background-color: $warna2;
+            padding: 15px;
+            margin: 0 0 2px 0;
+
+            &.link {
+                flex-direction: column;
+                align-items: center;
+                width: 48%;
+                margin: 0 0 25px 0;
+                padding: 25px 15px;
+                border-radius: 5px;
+                text-decoration: none;
+
+                &.nol {
+                    background: url("../../assets/img/vip_new_bg.3c1e8768.png") no-repeat scroll 35px center,
+                        rgba(0, 0, 0, 0) linear-gradient(60deg, rgb(204, 215, 233), rgb(112, 133, 165)) repeat scroll 0% 0%;
+                }
+
+                &.satu {
+                    background: url("../../assets/img/vip_new_bg.3c1e8768.png") no-repeat scroll 35px center,
+                        rgba(0, 0, 0, 0) linear-gradient(60deg, rgb(253, 158, 2), rgb(216, 106, 37)) repeat scroll 0% 0%;
+                }
+
+                &.dua {
+                    background: url("../../assets/img/vip_new_bg.3c1e8768.png") no-repeat scroll 35px center,
+                        rgba(0, 0, 0, 0) linear-gradient(60deg, rgb(48, 68, 179), rgb(39, 53, 128)) repeat scroll 0% 0%;
+                }
+
+                &.tiga {
+                    background: url("../../assets/img/vip_new_bg.3c1e8768.png") no-repeat scroll 35px center,
+                        rgba(0, 0, 0, 0) linear-gradient(60deg, rgb(49, 180, 137), rgb(62, 145, 184)) repeat scroll 0% 0%;
+                }
+
+                &.empat {
+                    background: url("../../assets/img/vip_new_bg.3c1e8768.png") no-repeat scroll 35px center,
+                        rgba(0, 0, 0, 0) linear-gradient(60deg, rgb(87, 101, 116), rgb(34, 47, 62)) repeat scroll 0% 0%;
+                }
+
+                &.lima {
+                    background: url("../../assets/img/vip_new_bg.3c1e8768.png") no-repeat scroll 35px center,
+                        rgba(0, 0, 0, 0) linear-gradient(60deg, rgb(255, 107, 107), rgb(238, 82, 83)) repeat scroll 0% 0%
+                }
+
+                &.enam {
+                    background: url("../../assets/img/vip_new_bg.3c1e8768.png") no-repeat scroll 35px center,
+                        rgba(0, 0, 0, 0) linear-gradient(60deg, rgb(39, 60, 117), rgb(112, 133, 165)) repeat scroll 0% 0%;
+                }
+
+                .teks {
+                    color: white;
+                    font-size: 11px;
+                    font-weight: 300;
+                    text-align: center;
+
+                    &.judul {
+                        font-size: 16px;
+                        margin: 0 0 8px 0;
+                        font-weight: normal;
+                    }
+                }
+            }
+
+            .icon {
+                width: 35%;
+                height: 100%;
+                margin: 0 13px 0 0
+            }
+
+            .field-deskripsi {
+                @include flex-column;
+                margin: 0 5px 0 0;
+
+                .teks {
+                    color: $warna4;
+                    font-size: 12px;
+                    margin: 0 0 5px 0;
+
+                    &.judul {
+                        color: white;
+                        font-size: 14px;
+                        font-weight: 300;
+                        word-break: break-all;
+                    }
+
+                }
+
+                .field-link {
+                    @include flex-row;
+
+                    .link {
+                        color: $warna4;
+                        font-size: 12px;
+                        text-decoration: none;
+                        margin: 0 5px 0 0;
+                    }
+
+                    .line {
+                        width: 1px;
+                        height: 15px;
+                        background-color: $warna4;
+                        margin: 0 5px 0 0;
+                    }
+                }
+            }
+
+            .field-harga {
+                @include flex-column;
+
+                .teks {
+                    align-self: flex-end;
+                    color: $warna4;
+                    font-size: 12px;
+                    margin: 0 0 5px 0;
+
+                    &.biru {
+                        color: rgb(64, 135, 241);
+                        font-size: 14px;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .nodata {
+        @include flex-column;
+        align-items: center;
+        width: 100%;
+        padding: 20px;
+        transition: $transition-fast;
+
+        &.hilang {
+            opacity: 0;
+        }
+
+        &.hapus {
+            display: none
+        }
+
+        .gambar {
+            margin: 0 0 30px 0;
+        }
+
+        .teks {
+            color: white;
+            font-size: 12px;
+            font-weight: 300;
+        }
+    }
+}

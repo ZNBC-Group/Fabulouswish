@@ -1,0 +1,46 @@
+.section-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    @include flex-column;
+    align-items: center;
+    background-color: $warna1;
+    padding: 10px;
+    transition: $transition;
+    transform: translateY(100%);
+
+    &.active {
+        transform: translateY(0);
+    }
+
+    .back {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        @include flex-row;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        width: 20px;
+
+        .line {
+            width: 1px;
+            height: 20px;
+            background-color: white;
+
+            &:nth-child(1n) {
+                transform: rotate(45deg);
+            }
+
+            &:nth-child(2n) {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    .teks {
+        color: white;
+    }
+}

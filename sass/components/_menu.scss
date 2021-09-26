@@ -1,12 +1,13 @@
 .menu {
     @include flex-row;
     align-items: center;
-    background-color: $warna2;
+    justify-content: space-between;
     padding: 0px 20px;
 
     &.scroll {
         overflow: auto;
         white-space: nowrap;
+        background-color: $warna2;
     }
 
     .item {
@@ -19,6 +20,8 @@
         .teks {
             color: white;
             font-size: 12px;
+            pointer-events: none;
+            transition: $transition-fast;
 
             &.active {
                 color: rgb(64, 135, 241);
@@ -30,7 +33,7 @@
             bottom: 0;
             height: 2px;
             width: 60px;
-            background-color: $warna2;
+            transition: $transition-fast;
 
             &.active {
                 background-color: rgb(64, 135, 241);

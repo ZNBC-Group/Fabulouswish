@@ -6,7 +6,7 @@
     padding: 10px 20px;
     margin: 0 0 5px 0;
 
-    &.di-tugas {
+    &.dengan-back {
         @include flex-row;
         align-items: center;
         justify-content: center;
@@ -29,5 +29,25 @@
                 font-size: 19px;
             }
         }
+    }
+
+    &.link {
+        @include flex-row;
+        align-items: center;
+        justify-content: space-between;
+        text-decoration: none;
+        margin: 0 0 1px 0;
+
+        .field-kiri {
+            @include flex-row;
+            align-items: center;
+
+            .icon {
+                width: 4.5vw;
+                margin-right: 3px;
+            }
+        }
+
+        .icon {}
     }
 }
