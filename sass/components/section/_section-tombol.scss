@@ -1,32 +1,33 @@
 .section-tombol {
+  @include flex-row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 0 5px 0;
+
+  .tombol {
     @include flex-row;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    margin: 0 0 5px 0;
+    justify-content: center;
+    width: 50%;
+    border: 1px solid $warna2;
+    padding: 5px;
+    transition: $transition-fast;
+    background-color: $warna1;
 
-    .tombol {
-        @include flex-row;
-        align-items: center;
-        justify-content: center;
-        width: 50%;
-        border: 1px solid $warna2;
-        padding: 5px;
-        transition: $transition-fast;
-
-        &.active {
-            background-color: $warna2;
-        }
-
-        .icon {
-            width: 10%;
-            margin: 0 10px 0 0;
-        }
-
-        .teks {
-            color: white;
-            font-size: 12px;
-            font-weight: 300;
-        }
+    &.active {
+      background-color: $warna2;
     }
+
+    .icon {
+      width: 10%;
+      margin: 0 10px 0 0;
+    }
+
+    .teks {
+      color: white;
+      font-size: 12px;
+      font-weight: 300;
+    }
+  }
 }

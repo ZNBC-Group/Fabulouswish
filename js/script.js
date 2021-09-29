@@ -91,7 +91,7 @@ const tabTugas = () => {
 const tabChange = (kondisi, node) => {
   if (kondisi == "hilangin") {
     setTimeout(opacityFun, 0);
-    setTimeout(displayFun, 600);
+    setTimeout(displayFun, 250);
     function opacityFun() {
       node.classList.add("hilang");
     }
@@ -99,8 +99,8 @@ const tabChange = (kondisi, node) => {
       node.classList.add("hapus");
     }
   } else if (kondisi == "munculin") {
-    setTimeout(opacityFun, 350);
-    setTimeout(displayFun, 600);
+    setTimeout(opacityFun, 250);
+    setTimeout(displayFun, 500);
     function opacityFun() {
       node.classList.remove("hapus");
     }

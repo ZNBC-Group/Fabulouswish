@@ -1,79 +1,79 @@
 .gambar-full {
-    @include flex-column;
-    align-items: center;
-    position: relative;
+  @include flex-column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+
+  .icon {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    z-index: 1;
+    color: white;
+    font-size: 20px;
+  }
+
+  .gambar {
     width: 100%;
     height: 100vh;
+  }
 
-    .icon {
-        position: absolute;
-        top: 10px;
-        left: 15px;
-        z-index: 1;
+  .overlay {
+    position: absolute;
+    top: 24.43778110944528vh;
+    left: 18px;
+    right: 18px;
+    @include flex-column;
+    align-items: center;
+
+    .section-atas {
+      @include flex-column;
+      align-items: center;
+      background-color: $warna2;
+      padding: 10px;
+      margin: 0 0 20px 0;
+
+      .teks {
         color: white;
-        font-size: 20px;
-    }
+        font-size: 12px;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 15px;
+      }
 
-    .gambar {
-        width: 100%;
-        height: 100vh;
-    }
-
-    .overlay {
-        position: absolute;
-        top: 24.43778110944528vh;
-        left: 18px;
-        right: 18px;
-        @include flex-column;
+      .copy {
+        @include flex-row;
         align-items: center;
+        margin: 0 0 10px 0;
 
-        .section-atas {
-            @include flex-column;
-            align-items: center;
-            background-color: $warna3;
-            padding: 10px;
-            margin: 0 0 20px 0;
-
-            .teks {
-                color: white;
-                font-size: 12px;
-                font-weight: 300;
-                text-align: center;
-                margin-bottom: 15px;
-            }
-
-            .copy {
-                @include flex-row;
-                align-items: center;
-                margin: 0 0 10px 0;
-
-                .icon {
-                    position: static;
-                    color: rgb(26, 107, 161);
-                    font-size: 12px;
-                    margin: 0 5px 0 0;
-                }
-
-                .teks {
-                    color: rgb(26, 107, 161);
-                    font-weight: normal;
-                    margin: 0;
-                }
-            }
-
-            .qr {
-                border: 5px white solid;
-                margin: 0 0 10px 0;
-            }
+        .icon {
+          position: static;
+          color: rgb(26, 107, 161);
+          font-size: 12px;
+          margin: 0 5px 0 0;
         }
 
-        .button {
-            text-decoration: none;
-            color: white;
-            text-align: center;
-            width: 100%;
-            padding: 10px;
-            border: 1px white solid;
+        .teks {
+          color: rgb(26, 107, 161);
+          font-weight: normal;
+          margin: 0;
         }
+      }
+
+      .qr {
+        border: 5px white solid;
+        margin: 0 0 10px 0;
+      }
     }
+
+    .button {
+      text-decoration: none;
+      color: white;
+      text-align: center;
+      width: 100%;
+      padding: 10px;
+      border: 1px white solid;
+    }
+  }
 }

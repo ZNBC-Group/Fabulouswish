@@ -1,89 +1,113 @@
 .vip {
-    @include flex-column;
+  @include flex-column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 7px 28px 7px;
+  padding: 23px 10px;
+  border-radius: 5px;
+
+  &.saya {
+    margin: 15px 7px 28px 7px;
+    background: url("../assets/img/vip_new_bg.3c1e8768.png") no-repeat scroll
+        55px center,
+      rgba(0, 0, 0, 0)
+        linear-gradient(60deg, rgb(204, 215, 233), rgb(112, 133, 165)) repeat
+        scroll 0% 0%;
+  }
+
+  &.nol {
+    background: url("../assets/img/vip_new_bg.3c1e8768.png") no-repeat scroll
+        55px center,
+      rgba(0, 0, 0, 0)
+        linear-gradient(60deg, rgb(204, 215, 233), rgb(112, 133, 165)) repeat
+        scroll 0% 0%;
+  }
+
+  &.satu {
+    background: url("../assets/img/vip_new_bg.3c1e8768.png") no-repeat scroll
+        55px center,
+      rgba(0, 0, 0, 0)
+        linear-gradient(60deg, rgb(253, 158, 2), rgb(216, 106, 37)) repeat
+        scroll 0% 0%;
+  }
+
+  &.dua {
+    background: url("../assets/img/vip_new_bg.3c1e8768.png") no-repeat scroll
+        55px center,
+      rgba(0, 0, 0, 0)
+        linear-gradient(60deg, rgb(48, 68, 179), rgb(39, 53, 128)) repeat scroll
+        0% 0%;
+  }
+
+  &.tiga {
+    background: url("../assets/img/vip_new_bg.3c1e8768.png") no-repeat scroll
+        55px center,
+      rgba(0, 0, 0, 0)
+        linear-gradient(60deg, rgb(49, 180, 137), rgb(62, 145, 184)) repeat
+        scroll 0% 0%;
+  }
+
+  &.empat {
+    background: url("../assets/img/vip_new_bg.3c1e8768.png") no-repeat scroll
+        55px center,
+      rgba(0, 0, 0, 0)
+        linear-gradient(60deg, rgb(87, 101, 116), rgb(34, 47, 62)) repeat scroll
+        0% 0%;
+  }
+
+  &.lima {
+    background: url("../assets/img/vip_new_bg.3c1e8768.png") no-repeat scroll
+        55px center,
+      rgba(0, 0, 0, 0)
+        linear-gradient(60deg, rgb(255, 107, 107), rgb(238, 82, 83)) repeat
+        scroll 0% 0%;
+  }
+
+  &.enam {
+    background: url("../assets/img/vip_new_bg.3c1e8768.png") no-repeat scroll
+        55px center,
+      rgba(0, 0, 0, 0)
+        linear-gradient(60deg, rgb(39, 60, 117), rgb(112, 133, 165)) repeat
+        scroll 0% 0%;
+  }
+
+  .field-atas {
+    @include flex-row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+
+    .teks {
+      color: white;
+      font-size: 18px;
+      margin-right: 5px;
+
+      &.kuning {
+        color: rgb(255, 255, 0);
+        font-size: 20px;
+
+        &.kecil {
+          font-size: 15px;
+          font-weight: 350;
+        }
+      }
+    }
+  }
+
+  .field-bawah {
+    @include flex-row;
     align-items: center;
     justify-content: space-between;
-    margin: 0 7px 28px 7px;
-    padding: 23px 10px;
-    border-radius: 5px;
+    width: 100%;
 
-    &.saya {
-        margin: 15px 7px 28px 7px;
-        background: url("../../assets/img/vip_new_bg.3c1e8768.png") no-repeat scroll 55px center,
-            rgba(0, 0, 0, 0) linear-gradient(60deg, rgb(204, 215, 233), rgb(112, 133, 165)) repeat scroll 0% 0%;
+    &.column {
+      flex-direction: column;
     }
 
-    &.nol {
-        background: url("../../assets/img/vip_new_bg.3c1e8768.png") no-repeat scroll 55px center,
-            rgba(0, 0, 0, 0) linear-gradient(60deg, rgb(204, 215, 233), rgb(112, 133, 165)) repeat scroll 0% 0%;
+    .teks {
+      color: white;
+      font-size: 12px;
+      font-weight: 300;
     }
-
-    &.satu {
-        background: url("../../assets/img/vip_new_bg.3c1e8768.png") no-repeat scroll 55px center,
-            rgba(0, 0, 0, 0) linear-gradient(60deg, rgb(253, 158, 2), rgb(216, 106, 37)) repeat scroll 0% 0%;
-    }
-
-    &.dua {
-        background: url("../../assets/img/vip_new_bg.3c1e8768.png") no-repeat scroll 55px center,
-            rgba(0, 0, 0, 0) linear-gradient(60deg, rgb(48, 68, 179), rgb(39, 53, 128)) repeat scroll 0% 0%;
-    }
-
-    &.tiga {
-        background: url("../../assets/img/vip_new_bg.3c1e8768.png") no-repeat scroll 55px center,
-            rgba(0, 0, 0, 0) linear-gradient(60deg, rgb(49, 180, 137), rgb(62, 145, 184)) repeat scroll 0% 0%;
-    }
-
-    &.empat {
-        background: url("../../assets/img/vip_new_bg.3c1e8768.png") no-repeat scroll 55px center,
-            rgba(0, 0, 0, 0) linear-gradient(60deg, rgb(87, 101, 116), rgb(34, 47, 62)) repeat scroll 0% 0%;
-    }
-
-    &.lima {
-        background: url("../../assets/img/vip_new_bg.3c1e8768.png") no-repeat scroll 55px center,
-            rgba(0, 0, 0, 0) linear-gradient(60deg, rgb(255, 107, 107), rgb(238, 82, 83)) repeat scroll 0% 0%
-    }
-
-    &.enam {
-        background: url("../../assets/img/vip_new_bg.3c1e8768.png") no-repeat scroll 55px center,
-            rgba(0, 0, 0, 0) linear-gradient(60deg, rgb(39, 60, 117), rgb(112, 133, 165)) repeat scroll 0% 0%;
-    }
-
-    .field-atas {
-        @include flex-row;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 5px;
-
-        .teks {
-            color: white;
-            font-size: 18px;
-            margin-right: 5px;
-
-            &.kuning {
-                color: rgb(255, 255, 0);
-                font-size: 20px;
-
-                &.kecil {
-                    font-size: 15px;
-                    font-weight: 350
-                }
-            }
-        }
-    }
-
-    .field-bawah {
-        @include flex-row;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-
-        &.column {
-            flex-direction: column;
-        }
-
-        .teks {
-            color: white;
-            font-size: 12px;
-            font-weight: 300;
-        }
-    }
+  }
 }
